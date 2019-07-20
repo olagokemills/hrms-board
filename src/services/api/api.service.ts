@@ -9,7 +9,7 @@ export class ApiService
 {
   jwt:string = null;
   headers:any = null;
-  url = 'https://projects.thealmondmedia.com/ola/cts/api/';
+  url = 'https://projects.thealmondmedia.com/prosper/hrms/api/';
   // url = '//localhost:8888/almondcareers/authenticdoc/api/';
   constructor(private router: Router) 
   { 

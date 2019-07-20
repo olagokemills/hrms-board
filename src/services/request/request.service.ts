@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-const url = 'https://projects.thealmondmedia.com/ola/cts/api/';
+const url = 'https://projects.thealmondmedia.com/prosper/hrms/api/';
 
 @Injectable({
   providedIn: 'root'
@@ -31,7 +31,7 @@ export class RequestService {
     });
   }
 
-  getAllEvents() {
+  getAllJobs() {
     let httpOptions = {
       headers: new HttpHeaders({
         'Content-Type': 'application/x-www-form-urlencoded',
@@ -39,7 +39,7 @@ export class RequestService {
       })
     };
 
-    return this.http.get(url + 'events', httpOptions);
+    return this.http.get(url + 'jobs', httpOptions);
   }
 
   registerForEvent(dat) {

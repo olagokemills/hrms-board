@@ -1,0 +1,65 @@
+<section class="home-section section-hero inner-page overlay bg-image" style="background-image: url('assets/images/hero_1.jpg');" id="home-section">
+    <div class="container">
+    <div class="row align-items-center justify-content-center">
+    <div class="col-md-12">
+    <div class="mb-5 text-center">
+    <h1 class="text-white font-weight-bold">Apply Now</h1>
+    <p>Your Desired Job is just an application away!</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <section class="site-section" id="next-section">
+    <div class="container">
+    <div class="row">
+    <div class="col-lg-6 mb-5 mb-lg-0">
+    <form action="#" class=""  [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="row form-group">
+    <div class="col-md-6 mb-3 mb-md-0">
+    <label class="text-black" for="fname">First Name</label>
+    <input type="text" id="fname" class="form-control"  formControlName="firstname">
+    </div>
+    <div class="col-md-6">
+    <label class="text-black" for="lname">Last Name</label>
+    <input type="text" id="lname" class="form-control"  formControlName="lastname">
+    </div>
+    </div>
+    <div class="row form-group">
+    <div class="col-md-6">
+    <label class="text-black" for="email">Email</label>
+    <input type="email" id="email" class="form-control" formControlName="email">
+    </div>
+    <div class="col-md-6">
+            <label class="text-black" for="lname">Phone</label>
+            <input type="text" id="lname" class="form-control" formControlName="phone">
+     </div>
+    </div>
+    <div class="row form-group">
+            <div class="col-md-12">
+            <label class="text-black" for="email">CV Link</label>
+            <input type="email" id="email" class="form-control" formControlName="cvlink">
+            </div>
+</div>
+    <div class="row form-group">
+    <div class="col-md-12">
+            <label class="text-black" for="subject">Why Should we hire you?</label>
+    <textarea name="message" id="message" cols="30" rows="7" class="form-control" formControlName="reason" placeholder="Write your notes or questions here..."></textarea>
+    </div>
+    </div>
+    <div class="row form-group">
+    <div class="col-md-12">
+    <input type="submit" value="Apply" class="btn btn-primary btn-md text-white">
+    </div>
+    </div>
+    </form>
+    </div>
+    <div class="col-lg-5 ml-auto">
+    <div class="p-4 mb-3 bg-white">
+    <p class="mb-0 font-weight-bold">Job Title</p>
+    <p class="mb-4">{{global.jobDetail.title}}</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
